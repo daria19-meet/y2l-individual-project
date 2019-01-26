@@ -1,5 +1,5 @@
-body {
-	background-image: url('studio.jpg');	
+.container{
+	background-image: url('../static/studio.jpg');	
 }
 content {
 	background-color: white; opacity: 0.5;
