@@ -11,10 +11,12 @@ def dancer_page(dancer_name):
 	dancer=query_dancer_by_name(dancer_name)
 	return render_template('dancer.html', dancer=dancer)
 
-@app.route('/<dance_style>', methods=["GET"])
+@app.route('/dance/<dance_style>', methods=["GET"])
 def dance_page(dance_style):
 	style=query_dance_by_name(dance_style)
-	dancers=query_dancer_by_style(dance_style)
+	dancers=query_dancer_by_styles(dance_style)
+	print(dancers)
+	print(style)
 	return render_template('dance_style.html', style=style, dancers=dancers)
 
 if __name__ == '__main__':
