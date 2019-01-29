@@ -13,7 +13,7 @@ class Dancer(Base):
     pic=Column(String)
     age=Column(String)
     nationality= Column(String)
-    studio=Column(String)
+    company=Column(String)
     styles=Column(String)
     shows=Column(String)
 
@@ -25,7 +25,6 @@ class Dance(Base):
 	origin=Column(String)
 	history= Column(String)
 	moves=Column(String)
-	performance=Column(String)
 
 class Studio(Base):
 	__tablename__='studio'
